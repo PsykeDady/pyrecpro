@@ -8,7 +8,7 @@ fi
 
 
 if [[ ! -d  lib/pycparser/pycparser ]]; then 
-	pip install -t lib/pycparser pycparser
+	pip install -t lib pycparser
 fi
 
 PYTHONPATH="lib:$PYTHONPATH" ./psykeco/pyrecpro/pyrecpro.py "$@"
